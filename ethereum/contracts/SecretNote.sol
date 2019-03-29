@@ -5,7 +5,8 @@ import "./verifier.sol";
 
 contract SecretNote is Verifier {
 
-  ERC20 internal DAI_TOKEN_ADDRESS = ERC20(0xad6d458402f60fd3bd25163575031acdce07538d);
+ //ERC20 internal DAI_TOKEN_ADDRESS = ERC20(0xad6d458402f60fd3bd25163575031acdce07538d);
+  ERC20 internal _0xBTC_TOKEN_ADDRESS = ERC20(0xb6ed7644c69416d67b522e20bc294a9a9b405b31);
 
   constructor() {}
 
@@ -27,7 +28,7 @@ contract SecretNote is Verifier {
     );
     notes[note] = State.Spent;
     require(
-      DAI_TOKEN_ADDRESS.transfer(msg.sender, amount * (10 ** 18)),
+      _0xBTC_TOKEN_ADDRESS.transfer(msg.sender, amount * (10 ** 18)),
       'daiToken transfer failed'
     );
     emit Claim(msg.sender, amount * (10 ** 18));
