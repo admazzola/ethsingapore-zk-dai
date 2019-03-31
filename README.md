@@ -1,5 +1,5 @@
-# ZkDAI
-Private DAI transactions on ethereum.
+# Zk0xBTC
+Private mined currency transactions on ethereum.
 
 [Demo video](https://youtu.be/55qt4tj2O3Y)
 
